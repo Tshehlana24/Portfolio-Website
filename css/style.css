@@ -418,6 +418,54 @@ justify-self: center;
 
 
 /*=============== ABOUT ===============*/
+.about{
+  background-color: var(--container-color);
+  transition: background-color .3s;
+}
+
+.about_picture{
+  position: relative;
+  justify-self: center;
+  margin-bottom: 1rem;
+}
+
+.about_image{
+  width: 17rem;
+}
+
+.about_img{
+  width: 18rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about_shadow{
+  width: 18rem;
+  height: 85%;
+  background-color: var(--body-color);
+  position: absolute;
+  bottom: 2.5rem;
+
+  left: 1rem;
+  border: 4px solid var(--black-color);
+
+
+}
+
+.about_list{
+  list-style: disc;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  color: var(--title-color);
+}
+
+.about_subtitle{
+  padding: .5rem;
+}
+
+.about_item{
+  padding: .5rem 0;
+}
 
 
 /*=============== SERVICES ===============*/
