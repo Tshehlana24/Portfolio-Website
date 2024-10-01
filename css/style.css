@@ -470,6 +470,76 @@ justify-self: center;
 
 /*=============== SERVICES ===============*/
 
+.services__container{
+  grid-template-columns:16rem ;
+  justify-content: center;
+  row-gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.service__data{
+  height: 100%;
+  background-color: var(--body-color);
+  border: 4px solid var(--black-color);
+  padding: 2rem 1.5rem;
+  z-index: 5;
+  position: relative;
+  transition: background-color .3s ,border-color .3s;
+}
+
+.service__card{
+  position: relative;
+}
+
+.services-lining{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 8px solid var(--first-color);
+  top: 0;
+  left: 0;
+  transition: transform .3s;
+ 
+
+}
+
+.service__card:hover .services-lining{
+  border: 4px solid var(--first-color);
+ transform: translate(0.89rem, .89rem);
+ transition: ease-in-out 0.3s;
+  
+}
+
+.services_icon{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+ 
+}
+
+.services_icon i{
+  font-size: 2rem;
+  color: var(--black-color);
+  transition: color .3s;
+  border: 3px solid var(--black-color);
+  padding: .2rem;
+}
+
+.services_box{
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--first-color);
+  right: -8px;
+  top: 8px;
+  z-index: -1;
+}
+
+
+.service-title{ 
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
 
 /*=============== PROJECTS ===============*/
 
@@ -503,3 +573,4 @@ justify-self: center;
 
 
 /* For large devices */
+
