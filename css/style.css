@@ -615,10 +615,113 @@ justify-self: center;
 
 
 /*=============== CONTACT ===============*/
+.contact{
+  padding-bottom: 0;
+}
 
+.contact__container{
+  position: relative;
+  grid-template-rows: 19rem max-content;
+  row-gap: 2rem;
+  
+}
+
+.contact__data{
+  position: relative;
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  z-index: 5;
+  margin: 0 auto;
+  background-color: var(--black-color);
+width: 310px;
+height: 310px;
+background-color: var(--container-color);
+padding: 1.5rem 1.5rem;
+border-bottom: 3px solid var(--black-color);
+transition: background-color .3s;
+}
+
+.contact__data .section__title-2{
+  margin: 0 0 1.5rem;
+  transform: translateX(-3.4rem);
+}
+
+.contact-form, .contact__content{
+  display: grid;
+  row-gap: .5rem;
+  margin: 0 auto;
+ 
+
+}
+
+.contact-title{
+  margin: 0 auto;
+}
+.contact-form-box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contact__form{
+  position: relative;
+}
+.contact__label{
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+  color: var(--title-color);
+}
+
+
+.contact__input, .contact__button{
+  width: 100%;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  border: none;
+  padding: 1rem;
+  transition: background-color .3s;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__input:focus{
+  border: 2.5px solid var(--first-color);
+  outline: none;
+  transition: all .2s;
+  
+}
+
+.contact__button{
+  background-color: var(--first-color);
+  color: var(--white-color);
+  box-shadow: 4px 4px 8px rgba(89, 73, 30, .35);
+
+  
+}
+.status{
+  text-align: center;
+  background-color: rgb(27, 255, 95);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  
+}
+
+.contact__button:hover, .contact__button:focus{
+  border: 3px solid var(--black-color);
+  transition: all .2s;
+}
 
 /* Opaque placeholder */
-
+.contact__input:focus::placeholder{
+  opacity: 0;
+  transition: all .6s;
+}
 
 /* Move label up & sticky label */
 

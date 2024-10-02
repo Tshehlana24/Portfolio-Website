@@ -32,4 +32,42 @@ const shadowHeader = () =>{
 
 }
 
-window.addEventListener('scroll', shadowHeader)
+window.addEventListener('scroll', shadowHeader);
+
+//Email Sender
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    emailjs.init("2JFn0e748gFAEI54K"); // Initialize EmailJS with your public key
+
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', sendEmail); 
+});
+const emailStatus = document.getElementById('status');
+
+
+
+function sendEmail(event) {
+    event.preventDefault();
+    let parameters = {
+        name: document.getElementById("name").value,
+        surname: document.getElementById("surname").value,
+        subject: document.getElementById("subject").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    }
+
+    emailjs.send("service_io3dk5v", "template_ygup8io", parameters).then(function(response) {
+
+        emailStatus.style.display = "block";
+        emailStatus.classList.add("status");
+        emailStatus.innerHTML = "Message sent successfully!";
+        event.target.reset();
+        setTimeout(function done() {
+            emailStatus.classList.remove("status");
+            emailStatus.style.display = "none";
+        },5000)
+       
+    }, function (error) {
+        emailStatus.innerHTML = "Error: " + JSON.stringify(error);
+    });
+    }
