@@ -543,6 +543,76 @@ justify-self: center;
 
 /*=============== PROJECTS ===============*/
 
+.projects{
+  background-color: var(--container-color);
+  transition: background-color .3s;
+}
+
+.projects__container{
+  row-gap: 2rem;
+}
+
+.projects__card{
+  padding: 1rem 1.5rem;
+  transition: background-color .3s;
+  background-color: var(--white-color);
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, .1);
+}
+
+.projects__img{
+ position: relative;
+  margin-bottom: .75rem;
+  border-radius: 2px;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, .5);
+}
+
+.projects__data{
+  margin-bottom: .5rem;
+}
+.project_subtitle{
+  position: relative;
+  display: inline-block;  
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  font-weight:var(--font-medium);
+
+
+}
+
+.projects__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .3rem;
+}
+
+.projects__buttons{
+  display: flex;
+  column-gap: .95rem;
+}
+
+.project-link{
+  display: flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  transition: color .3s;
+}
+
+.project-link i {
+  font-size: 1rem;
+  color: var(--title-color);
+  transition: transform .3s;
+}
+
+.project-link:hover, .project-link:hover i{
+  transform: translateX(.25rem);
+  font-size: 1rem;
+  column-gap: .25rem;
+  align-items: center;
+  color: var(--first-color);
+  transition: all 0.3s;
+}
+
 
 /*=============== CONTACT ===============*/
 
