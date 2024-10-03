@@ -79,3 +79,37 @@ function sendEmail(event) {
     this.scrollY >= 390 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
     }
     window.addEventListener('scroll', scrollUp)
+
+
+    //dark theme
+
+  const themeButton = document.getElementById('theme-button');
+  const darkTheme = 'dark-theme';
+  const iconTheme = 'icon-sun';
+
+  // Check if a theme is already selected
+  const selectedTheme = localStorage.getItem('selected-theme');
+  const selectedIcon = localStorage.getItem('selected-icon');
+
+  // Get the current theme
+  const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+  const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'icon-moon' : 'icon-sun';
+
+  // Apply the user's saved theme
+  if (selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    themeButton.classList[selectedIcon === 'icon-moon' ? 'add' : 'remove'](iconTheme);
+  }
+
+  // Toggle the theme when the button is clicked
+  themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+
+    // Save the theme and icon selection in local storage
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+  });
+
+
+    
