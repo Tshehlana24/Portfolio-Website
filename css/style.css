@@ -39,28 +39,6 @@
   --z-fixed: 100;
 }
 
-
-/*========== Variables Dark theme ==========*/
-.dark-theme {
-  --first-color: hsl(14, 98%, 50%);
-  --black-color: hsl(0, 0%, 100%);
-  --black-color-light: hsl(0, 0%, 80%);
-  --white-color: hsl(0, 0%, 15%);
-  --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(0, 0%, 80%);
-  --text-color-light: hsl(0, 0%, 65%);
-  --body-color: hsl(0, 0%, 10%);
-  --container-color: hsl(0, 0%, 15%);
-}
-
-.icon-moon::before {
-  content: '🌙'; /* Moon icon */
-}
-
-.icon-sun::before {
-  content: '☀️'; /* Sun icon */
-}
-
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
@@ -847,26 +825,7 @@ transition: background-color .3s;
   bottom: 2.5rem;
 }
 
-/*========== Variables Dark theme ==========*/
-.dark-theme {
-  --first-color: hsl(14, 98%, 50%);
-  --black-color: hsl(0, 0%, 100%);
-  --black-color-light: hsl(0, 0%, 80%);
-  --white-color: hsl(0, 0%, 15%);
-  --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(0, 0%, 80%);
-  --text-color-light: hsl(0, 0%, 65%);
-  --body-color: hsl(0, 0%, 10%);
-  --container-color: hsl(0, 0%, 15%);
-}
 
-.icon-moon::before {
-  content: '🌙'; /* Moon icon */
-}
-
-.icon-sun::before {
-  content: '☀️'; /* Sun icon */
-}
 /* Show Scroll Up */
 
 
