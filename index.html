@@ -472,7 +472,6 @@
             <i class="ri-whatsapp-fill"></i>
           </a>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_c8vrGGpx0A?si=KYG47_LYrK9VFzlx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
   
       <div class="footer__content">
@@ -510,17 +509,13 @@
           
           
     <script>
-        const loader = document.querySelector(".loader");
+        const loader = document.getElementById("loader");
 
 window.addEventListener("load", function(){
     loader.style.display = "none";
     loader.classList.add("hidden");
 })
 
-    loader.style.opacity = '1'; // Start fading out
-        setTimeout(() => {
-            loader.style.visibility = 'hidden'; // Hide after fading out
-        }, 800); 
     </script>
         
 </body>
