@@ -1,3 +1,4 @@
+
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
@@ -111,4 +112,6 @@ function sendEmail(event) {
     scrollReveal.reveal(`.socials, .nav, .section__title-1`, { origin: 'top'  });
     scrollReveal.reveal(`.about_list, .footer`, { origin: 'bottom'  });
     scrollReveal.reveal(`.home__picture, .about_description, .contact-form`, { origin: 'right'  });
-    scrollReveal.reveal(`.services__container`, { duration: 2000,  });
+
+
+
