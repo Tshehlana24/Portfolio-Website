@@ -503,12 +503,18 @@
           
           
     <script>
-        const loader = document.getElementById("loader");
+        window.addEventListener("DOMContentLoaded", function() {
+    const loader = document.querySelector(".loader");
+    loader.style.visibility = 'visible'; // Ensure it's visible initially
+    loader.style.opacity = '1'; // Start fully opaque
 
-window.addEventListener("load", function(){
-    loader.style.display = "none";
-    loader.classList.add("hidden");
-})
+    window.addEventListener("load", function() {
+        loader.style.opacity = '0'; // Start fading out
+        setTimeout(() => {
+            loader.style.visibility = 'hidden'; // Hide after fading out
+        }, 800); // Match this time with your CSS transition duration
+    });
+});
 
     </script>
         
