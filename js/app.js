@@ -78,4 +78,37 @@ function sendEmail(event) {
     const scrollUp = document.getElementById('up');
     this.scrollY >= 390 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
     }
-    window.addEventListener('scroll', scrollUp)
+    window.addEventListener('scroll', scrollUp);
+
+
+    //ANIMATION
+    const scrollReveal = ScrollReveal({
+        origin: 'top',
+        distance: '200px',
+        duration: 2500,
+        delay: 400,
+        reset: true
+    });
+
+
+    ScrollReveal().reveal('.nav', {
+        origin: 'top',
+        distance: '200px',
+        duration: 2500,
+        delay: 400,
+        reset: false
+    })
+
+    ScrollReveal().reveal('.service__card', {
+        origin: 'bottom',      // Animation starts from the bottom
+        distance: '310px',      // Moves 50px into position
+        duration: 800,         // Duration of each animation (800ms)
+        delay: 500,            // Initial delay before starting
+        interval: 500,         // Delay between each card's reveal (200ms)
+        reset: true           // Animation happens once when the element scrolls into view
+      });
+    scrollReveal.reveal(`.home__name, .home__info, .about_image, .contact__description`, { origin: 'left'  });
+    scrollReveal.reveal(`.socials, .nav, .section__title-1`, { origin: 'top'  });
+    scrollReveal.reveal(`.about_list, .footer`, { origin: 'bottom'  });
+    scrollReveal.reveal(`.home__picture, .about_description, .contact-form`, { origin: 'right'  });
+    scrollReveal.reveal(`.services__container`, { duration: 2000,  });
