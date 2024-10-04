@@ -517,7 +517,10 @@ window.addEventListener("load", function(){
     loader.classList.add("hidden");
 })
 
-
+    loader.style.opacity = '1'; // Start fading out
+        setTimeout(() => {
+            loader.style.visibility = 'hidden'; // Hide after fading out
+        }, 800); 
     </script>
         
 </body>

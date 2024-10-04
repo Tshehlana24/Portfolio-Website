@@ -13,12 +13,12 @@
   justify-content: center;
   opacity: 1;
   visibility: visible;
-  transition: all 5s ease-out;}
+  transition: all 1s ease-out;}
 
 .loader.hidden {
   opacity: 0; /* Fade out */
   visibility: hidden; /* Hide completely after fading */
-  transition: all 3s ease-out;
+  transition: all 1s ease-out;
 }
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
