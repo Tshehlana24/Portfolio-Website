@@ -1,8 +1,3 @@
-/* =============== LOADER ================ */
-.mainContent{
-  display: none;
-}
-
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
@@ -369,7 +364,7 @@ justify-self: center;
   place-items: center;
 }
 
-.socials__link:hover,.socials__link:focus, .socials__link:active, .home__arrows:hover{
+.socials__link:hover{
   color: var(--first-color);
   transition: ease-in 0.3s;
 }
