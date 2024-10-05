@@ -232,21 +232,7 @@ img {
 
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1150px) {
-  .nav__menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.727);
-    padding-block: 1.5rem 4rem;
-    width: 100%;
-    text-align: center;
-    color: #ffffff;
-    backdrop-filter: blur(10px);
-    transition: top .4s;
-  }
 
-}
 
 .nav__title,
 .nav__close, .nav__name {
@@ -880,6 +866,7 @@ transition: background-color .3s;
 /* For medium devices */
 @media screen and (min-width: 576px){ 
 
+  
   .home__container,
   .projects__container,
   .about{
@@ -1112,3 +1099,24 @@ height: 310px;
 
 }
 
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -1000%; /* Hide the menu initially */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.727);
+   width: 
+    100%;
+    padding-block: 1.5rem 4rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: top .4s; /* Smooth slide down when shown */
+  }
+
+  
+  .show-menu {
+    top: 0;
+}    
+
+
+}
